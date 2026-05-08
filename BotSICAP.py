@@ -1,9 +1,6 @@
 from playwright.sync_api import sync_playwright
 import os
 
-pI = "01/2025"
-pF = "03/2025"
-
 def automateDownloadSicap(pStart, pFinal, user, password, stop):
     # Inicia o Playwright
     with sync_playwright() as p:
@@ -125,7 +122,3 @@ def automateDownloadSicap(pStart, pFinal, user, password, stop):
             input("Pressione ENTER aqui na tela preta (terminal) para encerrar o robô...")
 
         web.close()
-
-# Executa o nessa aba
-if __name__ == "__main__":
-    automateDownloadSicap(pI, pF)
