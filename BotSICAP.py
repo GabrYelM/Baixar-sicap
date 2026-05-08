@@ -47,7 +47,7 @@ def automateDownloadSicap(pStart, pFinal, user, password, stop):
                 page.locator('#idUnidadeConsolidadaSelectReport-arrow').click()
             
             # Clica na unidade
-            page.locator(f'[id$="-idUnidadeConsolidadaSelectReport-{number}"]').click() #TALVEZ DE ERRO NO FUTURO
+            page.locator(f'[id$="-idUnidadeConsolidadaSelectReport-{number}"]').click()
             page.wait_for_timeout(500)
             
             # Armazena o nome da unidade para nomear o arquivo no futuro
